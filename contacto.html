@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto - Mavigrafías</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #f4f4f4;
+      margin: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    header img {
+      width: 150px;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    form {
+      margin: 30px auto;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    img.contacto-img {
+      width: 300px;
+      height: auto;
+      margin-top: 30px;
+    }
+
+    footer {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <header>
+    <img src="images/logo.png" alt="Logo de Mavigrafías">
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobremi.html">Sobre mí</a></li>
+      <li><a href="portafolio.html">Portafolio</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Formulario de contacto -->
+  <form action="mailto:mavigrafias@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="email" name="correo" placeholder="Correo electrónico" required>
+    <textarea name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Imagen de contacto -->
+  <img src="images/11.jpg" alt="Imagen de contacto" class="contacto-img">
+
+  <!-- Enlaces -->
+  <footer>
+    <p><a href="mailto:mavigrafias@gmail.com">Escríbeme por correo</a></p>
+    <p><a href="https://instagram.com/mavigrafias" target="_blank">Instagram @mavigrafias</a></p>
+  </footer>
+
+</body>
+</html>
